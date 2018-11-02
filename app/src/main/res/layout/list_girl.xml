@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00f0f0">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="4dp"/>
+        <TextView
+            android:id="@+id/sname2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:padding="4dp"
+            android:text=" Student Name "
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="#ffffff"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/sgpa2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="GPA"
+            android:background="#dddddd"
+            android:padding="4dp"
+            android:gravity="right"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
