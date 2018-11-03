@@ -12,23 +12,27 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+   int s = 5 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
         final ArrayList<Student> students = new ArrayList<Student>();
         for(int i = 0 ; i<100 ; i++)
         {   Student std ;
-            if(i%2 == 0) {
+
                 std = new Student(" Girl " + i, R.drawable.girl, "85%");
-            }
-            else {
-                std = new Student(" Boy "+ i , R.drawable. boy,"80%") ;
-            }
+
+
+
+               // std = new Student(" Boy "+ i , R.drawable. boy,"80%") ;
+
             students.add(std);
         }
-
 
         ListView studentList = (ListView) findViewById(R.id.list_student);
 

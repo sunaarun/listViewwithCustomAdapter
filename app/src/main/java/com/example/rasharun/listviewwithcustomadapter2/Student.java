@@ -5,7 +5,7 @@ public class Student {
     int imageID ;
     String GPA ;
 
-    public Student(String n , int id , String gpa)
+   public Student(String n , int id , String gpa)
     {   this.name = n ;
         this.imageID = id;
         this.GPA = gpa;

@@ -11,22 +11,27 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class studentAdapter extends ArrayAdapter<Student> {
 
+    Student student;
 
-    /* private static class ViewHolder {
-         TextView textName;
-         TextView tGpa;
-         ImageView Img;
-     }*/
-    Student student ;
+    public studentAdapter(@NonNull Context context, int resource) {
 
-    public studentAdapter(@NonNull Context context, ArrayList<Student> students) {
-        super(context, 0, students);
+        super(context, resource);
     }
 
-    @NonNull
+
+
+
+
+
+
+
+
+
+   @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
@@ -45,9 +50,9 @@ public class studentAdapter extends ArrayAdapter<Student> {
 
     public View girlView(int position , View view , ViewGroup parent, Student std) {
 
-        // if(view == null) { // Check if an existing view is being reused, otherwise inflate the view
+        if(view == null) { // Check if an existing view is being reused, otherwise inflate the view
         view = LayoutInflater.from(getContext()).inflate(R.layout.list_girl, parent, false);
-        // }
+         }
         TextView name = (TextView) view.findViewById(R.id.sname2);
         TextView gpa = (TextView) view.findViewById(R.id.sgpa2);
         ImageView img = (ImageView) view.findViewById(R.id.img2);
