@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 std = new Student(" Boy "+ i , R.drawable. boy,"80%") ;
             }
             students.add(std);
-        }
+        }// 6
 
  ListView studentList = (ListView) findViewById(R.id.list_student);
 
