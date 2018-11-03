@@ -17,21 +17,11 @@ public class studentAdapter extends ArrayAdapter<Student> {
 
     Student student;
 
-    public studentAdapter(@NonNull Context context, int resource) {
-
-        super(context, resource);
+    public studentAdapter(@NonNull Context context, int resource, @NonNull List<Student> objects) {
+        super(context, resource, objects);
     }
 
-
-
-
-
-
-
-
-
-
-   @NonNull
+    @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
